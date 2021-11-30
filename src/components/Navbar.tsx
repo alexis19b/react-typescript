@@ -6,6 +6,7 @@ import { CssBaseline, AppBar, makeStyles, Toolbar, Typography } from "@material-
 const useStyles = makeStyles((theme) => ({
   navlinks: {
     marginLeft: theme.spacing(10),
+
     display: "flex",
   },
   logo: {
@@ -16,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "white",
     fontSize: "20px",
-    marginLeft: theme.spacing(15),
+    marginLeft: theme.spacing(5),
+    marginRight: theme.spacing(10),
     "&hover": {
       color: "yellow",
       borderBottom: "1px solid white",

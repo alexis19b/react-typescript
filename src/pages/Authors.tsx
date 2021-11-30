@@ -1,5 +1,6 @@
 import React, { useEffect, FC, useState } from "react";
 import { getUsers } from "../services/index";
+import { Loading } from "../components/Loading";
 
 import { Users } from "../interfaces/users";
 
@@ -18,8 +19,8 @@ export const Authors: FC = () => {
     <>
       {
         !user
-          ? <h1>Loaginf...</h1>
-          : <h1>Ya cargo</h1>
+          ? <h1>Ya cargo</h1>
+          : Array(3).fill(<Loading />)
       }
       <h1>Authors Route</h1>
     </>
